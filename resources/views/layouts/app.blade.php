@@ -13,11 +13,12 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
-    <section id="app-layout">
-    @include('includes.side-menu')
-
-  @yield('content')
-    </section>
+      <section id="app-layout">
+        @include('includes.side-menu')
+        <section id="content-section">
+          @yield('content')
+        </section>
+      </section>
   </section>
     </body>
 </html>
