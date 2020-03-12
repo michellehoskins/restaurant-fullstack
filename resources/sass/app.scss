@@ -5,6 +5,13 @@
 @import "reset";
 @import "home";
 @import "pages/about";
+@import "pages/waitlist";
+@import "pages/offers";
+@import "menu/index";
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 
 #app-layout{
   display: grid;
@@ -98,7 +105,7 @@
     background: -moz-radial-gradient(center, ellipse cover, #ed4852 0%, #9c1b24 100%); /* FF3.6-15 */
     background: -webkit-radial-gradient(center, ellipse cover, #ed4852 0%,#9c1b24 100%); /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center, #ed4852 0%,#9c1b24 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    overflow: hidden;
+    // overflow: hidden;
   }
 }
 #information{
@@ -341,7 +348,7 @@ h2{
         left: -20px;
       }
       .right-btn{
-        left: -20px;
+        right: -20px;
       }
     } 
     h2{
@@ -403,7 +410,7 @@ h2{
         left: -20px;
       }
       .right-btn{
-        left: -20px;
+        right: -20px;
       }
     } 
     h2{
@@ -416,6 +423,10 @@ h2{
       }
     }
   }
+}
+.content-box{
+  background: #ffffff;
+  padding: 20px;
 }
 
 // Large devices (desktops, 992px and up)
